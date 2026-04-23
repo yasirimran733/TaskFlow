@@ -1,12 +1,15 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
-
+import HeroSection from '../../components/HeroSection'
+import Footer from '../../components/Footer'
+import Steps from '../../components/Steps'
 function LandingPage() {
   return (
     <div>
       <Navbar/>
-      <h1 className='text-3xl text-center'>Task Management System</h1>
-      <h1>Landing</h1>
+      <HeroSection/>
+      <Steps/>
+      <Footer/>
     </div>
   )
 }
