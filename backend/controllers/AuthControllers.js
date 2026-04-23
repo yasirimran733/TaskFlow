@@ -89,11 +89,10 @@ export const login = async (req, res) => {
             });
         }
 
+        // JWT Token made
         const secretKey = process.env.JWT_KEY;
         const token = jwt.sign({ user: user._id }, secretKey, { expiresIn: "1d" })
-
-        console.log("Token :", token)
-
+        
         res.status(200).json({
             success: true,
             message: "Login successful",
